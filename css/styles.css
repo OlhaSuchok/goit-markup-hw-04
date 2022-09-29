@@ -4,9 +4,11 @@
   --main-color: #212121;
   --secondary-color: #757575;
   --third-color: #F5F4FA;
+  --fourth-color: #F5F5F5;;
   --accent-color: #ffffff;
   --adress-color: rgba(255, 255, 255, 0.6);
   --nav-color: #2196f3;
+  --icons-color: #AFB1B8;
 }
 
 body {
@@ -100,7 +102,6 @@ button {
   color: var(--nav-color);
 }
 
-.link-tel,
 .heading-text,
 .caption-text {
   color: var(--secondary-color);
@@ -122,7 +123,7 @@ button {
 }
 
 .section-command,
-.container.color, {
+.container.color {
   background-color: var(--third-color);
 }
 
@@ -184,11 +185,6 @@ button {
   letter-spacing: 0.02em;
 }
 
-.link-mail,
-.link-tel {
-  color: var(--secondary-color);
-}
-
 .nav {
   display: flex;
   margin-right: 318px;
@@ -210,17 +206,16 @@ button {
   margin-right: 30px;
 }
 
-.auth-nav .envelope {
+.envelope,
+.smartphone {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
+  color: var(--secondary-color);
 }
 
-.auth-nav .smartphone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.envelope {
+  margin-right: 30px;
 }
 
 .icon-envelope {
@@ -237,6 +232,13 @@ button {
   fill: currentColor;
   width: 10px;
   height: 16px;
+}
+
+.envelope:hover,
+.smartphone:hover,
+.envelope:focus,
+.smartphone:focus {
+  color: var(--nav-color);
 }
 
 /* HERO */
@@ -319,7 +321,6 @@ button {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--third-color);
-  background-image: url();
 }
 
 .criterion-list:not(:last-child) {
@@ -352,6 +353,10 @@ button {
 }
 
 /* SECTION-COMMAND */
+.section-command {
+  background-color: var(--third-color);
+}
+
 .section-command .flex {
   display: flex;
 }
@@ -410,7 +415,55 @@ background-color: var(--accent-color);
   width: 44px;
   height: 44px;
   background-color: var(--accent-color);
+  fill: var(--icons-color);
 }
+
+.icon:hover, 
+.icon:focus {
+  background-color: var(--nav-color);
+  fill: var(--accent-color);
+}
+
+/* CLIENTS */
+.section-clients {
+  background-color: var(--accent-color);
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: var(--icons-color);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.Logo1,
+.Logo2,
+.Logo3,
+.Logo4,
+.Logo5,
+.Logo6 {
+  padding: 0;
+  width: 106px;
+  height: 60px;
+}
+
+.clients:hover,
+.clients:focus {
+  fill: var(--nav-color);
+  border: 1px solid var(--nav-color);
+} 
 
 /* FOOTER */
 .footer .container {
