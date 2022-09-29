@@ -224,7 +224,6 @@ button {
 }
 
 .icon-envelope {
-  display: inline-block;
   margin-right: 10px;
   padding: 0;
   fill: currentColor;
@@ -312,6 +311,29 @@ button {
   letter-spacing: 0.03em;
 }
 
+.criterion-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--third-color);
+  background-image: url();
+}
+
+.criterion-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
+}
+
 /* SECTION-FUNCTIONS */
 .function-section {
   padding-top: 0;
@@ -349,7 +371,7 @@ button {
 }
 
 .caption-text {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -365,6 +387,29 @@ button {
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 background-color: var(--accent-color);
+}
+
+.networks-list {
+  display: flex;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.networks-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: var(--accent-color);
 }
 
 /* FOOTER */
@@ -490,61 +535,3 @@ button-project {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-
-/* DECORATION */
-
-
-
-
-.list-icon {
-  display: flex;
-}
-
-.icon {
-  display: block;
-  border: none;
-  padding: 0;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  /* fill: currentColor; */
-  background-color: #2196f3;
-}
-
-.criterion > li::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background-color: var(--third-color);
-  background-image: url();
-  background-position: center;
-  background-size: contain;
-}
-
-.criterion > li:nth-child(1)::before {
-background-image: url();
-}
-
-/* .link-mail::before {
-display: inline-block;
-content: "";
-width: 15px;
-height: 20px;
-background-color: rgb(43, 150, 226);
-} */
-
-
-/* .icons {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  outline: 1px solid black;
-} */
-
-/* .icons .button {
-  background-image: url();
-} */
-
-/* background-color: var(--accent-color);
-fill: var(--white-color);  */
-
