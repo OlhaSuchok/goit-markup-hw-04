@@ -16,14 +16,25 @@
 <a class="logo" href="index.html"><span class="logotype" >Web</span>Studio</a>
 <nav class="site-nav">
 <ul class="list nav">
-    <li><a class="link studio" href="index.html">Студія</a></li>
-    <li><a class="link portfolio current" href="./portfolio.html">Портфоліо</a></li>
+    <li><a class="link studio current" href="index.html">Студія</a></li>
+    <li><a class="link portfolio" href="./portfolio.html">Портфоліо</a></li>
     <li><a class="link contacts" href="">Контакти</a></li>
 </ul> 
 </nav>
 <ul class="list auth-nav">
-    <li><a class="item link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    <li><a class="item link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>  
+    <li class="envelope">
+        <svg class="icon-envelope" width:="16px" height="12px">
+            <use href="./images/icons.svg#icon-envelope" ></use>
+        </svg>
+        <a class="item link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+
+    <li class="smartphone">
+        <svg class="icon-smartphone" width:="10px" height="16px">
+            <use href="./images/icons.svg#icon-smartphone" ></use>
+        </svg>
+        <a class="item link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+    </li>  
 </ul> 
     </div>
     </header>
@@ -140,12 +151,51 @@
 <!--Footer-->
 <footer class="footer">
     <div class="container">
+        <div class="info">
     <a class="logo-footer" href="index.html"><span class="logotype">Web</span>Studio</a>
     <ul class="list footer">
 <li><a class="link-footer address" href="" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
 <li><a class="link-footer" href="">info@devstudio.com</a></li>
 <li><a class="link-footer" href="">+38 096 111 11 11</a></li>
     </ul>
+        </div>
+
+        <div class="footer-networks">
+        <p class="text">Приєднуйтесь</p>
+        <ul class="networks-list" >
+    <li class="network">
+        <a class="icon-footer" href="#">
+        <svg class="icon-instagram" width:="20px" height="20px">
+            <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+        </a>
+    </li>
+
+    <li class="network">
+        <a class="icon-footer" href="#">
+        <svg class="icon-twitter" width:="20px" height="20px">
+            <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+        </a>
+    </li>
+
+    <li class="network">
+        <a class="icon-footer" href="#">
+        <svg class="icon-facebook" width:="20px" height="20px">
+            <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+        </a>
+    </li>
+
+    <li class="network">
+        <a class="icon-footer" href="#">
+        <svg class="icon-linkedin" width:="20px" height="20px">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+        </a>
+    </li>
+</ul>
+        </div>
     </div>
 </footer>
 </body>
