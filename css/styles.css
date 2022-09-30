@@ -88,11 +88,7 @@ button {
 .portfolio:hover,
 .portfolio:focus,
 .contacts:hover,
-.contacts:focus, 
-.link-mail:hover,
-.link-mail:focus,
-.link-tel:hover,
-.link-tel:focus,
+.contacts:focus,
 .link-footer:hover,
 .link-footer:focus,
 .link-footer.address:hover,
@@ -222,23 +218,25 @@ button {
   margin-right: 10px;
   padding: 0;
   fill: currentColor;
-  width: 16px;
-  height: 12px;
 }
 
 .icon-smartphone {
   margin-right: 10px;
   padding: 0;
   fill: currentColor;
-  width: 10px;
-  height: 16px;
 }
 
-.envelope:hover,
-.smartphone:hover,
-.envelope:focus,
-.smartphone:focus {
+.link-mail,
+.link-tel {
+  display: flex;
+}
+
+.envelope a:hover,
+.smartphone a:hover, 
+.envelope a:focus,
+.smartphone a:focus {
   color: var(--nav-color);
+  fill: #2196f3;
 }
 
 /* HERO */
@@ -324,14 +322,6 @@ button {
 
 .criterion-list:not(:last-child) {
   margin-right: 30px;
-}
-
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut {
-  width: 70px;
-  height: 70px;
 }
 
 /* SECTION-FUNCTIONS */
@@ -630,6 +620,5 @@ button-project {
 }
 
 .ptoject:hover {
-border: 1px solid #EEEEEE;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
